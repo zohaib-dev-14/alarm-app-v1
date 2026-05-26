@@ -33,5 +33,6 @@ jobs:
       - name: Build Docker Image
         run: docker build -t zohaibsaraj/alarm-app:v1 .
 
+
       - name: Push Docker Image
         run: docker push zohaibsaraj/alarm-app:v1
