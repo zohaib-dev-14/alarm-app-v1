@@ -98,10 +98,129 @@ The application provides secure authentication, email OTP verification, refresh 
 
 ---
 
+
+## ARCHITECTURAL DIAGRAMS
+
+
+# Screenshots
+
+## System Architecture
+
+### Overall Backend Architecture
+
+![System Architecture](docs/screenshots/system_architecture_alarm_1.png)
+
+The architecture consists of:
+
+- Spring Boot REST API
+- PostgreSQL Database
+- Redis Cache
+- JWT Authentication
+- Email OTP Verification
+- Nginx Reverse Proxy
+- Dockerized Services
+- Math & QR Challenge Engines
+
+---
+
+## Authentication Flow
+
+### User Registration → OTP Verification → JWT Issuance
+
+![Authentication Flow](docs/screenshots/auth_flow_alarm_2.png)
+
+Authentication workflow:
+
+1. User registers
+2. OTP sent via email
+3. OTP verification
+4. JWT access & refresh tokens generated
+5. Refresh token rotation
+6. Secure logout
+
+---
+
+## Alarm Management Flow
+
+### Alarm Lifecycle
+
+![Alarm Management Flow](docs/screenshots/alarm_management_flow_3.png)
+
+Alarm operations:
+
+- Create Alarm
+- Get Alarms
+- Update Alarm
+- Toggle Alarm
+- Delete Alarm
+
+---
+
+## Alarm Dismissal Challenge Flow
+
+### Math Challenge & QR Challenge Verification
+
+![Alarm Dismissal Flow](docs/screenshots/alarm_dismissal_flow_4.png)
+
+Alarm dismissal requires challenge completion:
+
+- Math Challenge
+- QR Challenge
+- Verification Process
+- Successful Alarm Dismissal
+
+---
+
+## CI/CD Pipeline
+
+### GitHub Actions + Docker Build Pipeline
+
+![CI/CD Pipeline](docs/screenshots/ci_cd_alarm_5.png)
+
+Pipeline stages:
+
+1. Code Push
+2. GitHub Actions
+3. Maven Build & Test
+4. Docker Image Build
+5. Docker Image Registry
+
+---
+
+## JWT FLOw
+
+# How access token (JWT TOKEN) and Refresh Token works
+
+![JWT Flow](docs/screenshots/jwt_flow_v1.png)
+
+---
+
+## Key Features Overview
+
+### Backend Capabilities
+
+![Key Features](docs/screenshots/key_features_alarm_6.png)
+
+Included features:
+
+- JWT Authentication
+- Refresh Token Rotation
+- Email OTP Verification
+- Alarm CRUD
+- Math Challenge Engine
+- QR Challenge Engine
+- Redis Caching
+- PostgreSQL Persistence
+
+- 
+
+--- 
+
+
 # 🏗️ System Architecture
 
 ```text
-Flutter Mobile Application
+       User/Client
             │
             ▼
      Nginx Reverse Proxy
