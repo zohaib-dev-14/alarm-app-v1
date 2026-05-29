@@ -379,15 +379,7 @@ src/main/java
 
 # 📸 API Documentation Screenshots
 
-## 1. User Registration
-
-User submits registration details.
-
-![Registration](docs/screenshots/registration_alarm.png)
-
----
-
-## 2. Registration OTP Sent
+## 1. Registration OTP Sent
 
 OTP is sent to the registered email address.
 
@@ -395,7 +387,7 @@ OTP is sent to the registered email address.
 
 ---
 
-## 3. Verify Registration OTP
+## 2. Verify Registration OTP
 
 User verifies email ownership through OTP.
 
@@ -403,7 +395,7 @@ User verifies email ownership through OTP.
 
 ---
 
-## 4. Login
+## 3. Login
 
 Authenticated user login.
 
@@ -411,7 +403,7 @@ Authenticated user login.
 
 ---
 
-## 5. Refresh Access Token
+## 4. Refresh Access Token
 
 Generate a new access token using refresh token rotation.
 
@@ -423,7 +415,7 @@ Generate a new access token using refresh token rotation.
 
 ---
 
-## 6. Create Alarm
+## 5. Create Alarm
 
 Create a new alarm with challenge configuration.
 
@@ -431,7 +423,7 @@ Create a new alarm with challenge configuration.
 
 ---
 
-## 7. Get All Alarms
+## 6. Get All Alarms
 
 Retrieve all alarms belonging to the user.
 
@@ -439,7 +431,7 @@ Retrieve all alarms belonging to the user.
 
 ---
 
-## 8. Update Alarm
+## 7. Update Alarm
 
 Update alarm settings and challenge configuration.
 
@@ -447,7 +439,7 @@ Update alarm settings and challenge configuration.
 
 ---
 
-## 9. Toggle Alarm
+## 8. Toggle Alarm
 
 Enable or disable an alarm.
 
@@ -461,7 +453,7 @@ Users must solve a generated math problem before alarm dismissal.
 
 ---
 
-## 10. Generate Math Challenge
+## 9. Generate Math Challenge
 
 Generate a challenge for alarm dismissal.
 
@@ -469,7 +461,7 @@ Generate a challenge for alarm dismissal.
 
 ---
 
-## 11. Verify Math Challenge (Failure)
+## 10. Verify Math Challenge (Failure)
 
 Invalid answer submitted.
 
@@ -477,7 +469,7 @@ Invalid answer submitted.
 
 ---
 
-## 12. Verify Math Challenge (Success)
+## 11. Verify Math Challenge (Success)
 
 Correct answer submitted.
 
@@ -491,7 +483,7 @@ Users can dismiss alarms by scanning and verifying a QR challenge.
 
 ---
 
-## 13. Generate QR Challenge
+## 12. Generate QR Challenge
 
 Generate QR challenge token.
 
@@ -499,7 +491,7 @@ Generate QR challenge token.
 
 ---
 
-## 14. Verify QR Challenge
+## 13. Verify QR Challenge
 
 Verify QR challenge successfully.
 
@@ -508,6 +500,8 @@ Verify QR challenge successfully.
 ---
 
 # 🚪 Logout
+
+## 14. Logout
 
 Invalidate refresh token and terminate session.
 
