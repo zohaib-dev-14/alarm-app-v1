@@ -175,7 +175,7 @@ Alarm dismissal requires challenge completion:
 
 ### GitHub Actions + Docker Build Pipeline
 
-![CI/CD Pipeline](docs/screenshots/ci_cd_alarm_5.png)
+![CI/CD Pipeline](docs/screenshots/ci_cd_alarm_5_new.png)
 
 Pipeline stages:
 
