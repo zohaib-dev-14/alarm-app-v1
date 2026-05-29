@@ -14,28 +14,27 @@ public class SwaggerConfig {
 
     @Bean
     public OpenAPI customOpenAPI() {
-        return new OpenAPI().info(
-          new Info()
-               .title("ReveilleX - An Alarm Application")
-               .version("1.0")
-               .description("Auth APIs + Alarm Application")
+
+        return new OpenAPI()
+
+                .info(new Info()
+                        .title("ReveilleX - An Alarm Application")
+                        .version("1.0")
+                        .description("Production-ready backend system using Spring Boot, JWT, Redis, Docker and CI/CD.")
                 )
-                .addSecurityItem(
-                      new SecurityRequirement().addList("bearerAuth")
-                )
-                .components(
-                new Components().addSecuritySchemes(
-                                        "bearerAuth",
-                 new SecurityScheme().name("bearerAuth")
-                         .type(SecurityScheme.Type.HTTP)
-                         .scheme("bearer")
-                         .bearerFormat("JWT")
-                )
-                ).addServersItem(
-                        new Server()
-                                .url("https://bunt-sneer-sloping.ngrok-free.dev")
-                                .description("Production Server")
-                )
-                ;
+
+                .addSecurityItem(new SecurityRequirement().addList("Bearer Authentication"))
+
+                .components(new Components()
+                        .addSecuritySchemes(
+                                "Bearer Authentication",
+
+                                new SecurityScheme()
+                                        .name("Authorization")
+                                        .type(SecurityScheme.Type.HTTP)
+                                        .scheme("bearer")
+                                        .bearerFormat("JWT")
+                        )
+                );
     }
 }

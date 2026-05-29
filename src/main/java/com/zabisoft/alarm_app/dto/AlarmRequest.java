@@ -17,7 +17,7 @@ import java.util.Set;
 public class AlarmRequest {
     @NotBlank private String label;
     @NotBlank private String alarmTime;
-    private boolean isActive;
+    private boolean active;
     @NotNull private ChallengeType challengeType;
     @NotNull private Difficulty difficulty;
     private Set<DayOfWeek> repeatDays;
