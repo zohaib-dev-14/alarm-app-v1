@@ -187,6 +187,17 @@ Pipeline stages:
 
 ---
 
+## Docker Hub
+
+### Docker Hub Repo 
+
+![DockerHub Image Registry](docs/screenshots/dockerhub_image_registry.png)
+
+Docker Hub Image Registry:
+1. Docker Image Registry
+
+---
+
 ## JWT FLOw
 
 # How access token (JWT TOKEN) and Refresh Token works
