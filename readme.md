@@ -249,57 +249,139 @@ src/main/java
 
 # 📸 API Documentation Screenshots
 
-## Authentication APIs
+## 1. User Registration
 
-![Register](docs/screenshots/auth_register.png)
+User submits registration details.
 
-![Verify Registration](docs/screenshots/auth_verify_registration.png)
-
-![Login](docs/screenshots/auth_login.png)
-
-![Refresh Token](docs/screenshots/auth_refresh.png)
-
-![Logout](docs/screenshots/auth_logout.png)
-
-![Reset Password](docs/screenshots/auth_reset_password.png)
+![Registration](docs/screenshots/registration_alarm.png)
 
 ---
 
-## OTP APIs
+## 2. Registration OTP Sent
 
-![Forgot Password OTP](docs/screenshots/forgot_password_otp.png)
+OTP is sent to the registered email address.
 
-![Verify Forgot Password OTP](docs/screenshots/verify_forgot_password_otp.png)
-
-![Resend Registration OTP](docs/screenshots/resend_registration_otp.png)
-
-![Resend Forgot Password OTP](docs/screenshots/resend_forgot_password_otp.png)
+![OTP Sent](docs/screenshots/registration_alarm_1.png)
 
 ---
 
-## Alarm APIs
+## 3. Verify Registration OTP
 
-![Create Alarm](docs/screenshots/create_alarm.png)
+User verifies email ownership through OTP.
 
-![Get Alarms](docs/screenshots/get_alarms.png)
-
-![Update Alarm](docs/screenshots/update_alarm.png)
-
-![Delete Alarm](docs/screenshots/delete_alarm.png)
-
-![Toggle Alarm](docs/screenshots/toggle_alarm.png)
+![Verify Registration](docs/screenshots/verify_registration_alarm_2.png)
 
 ---
 
-## Challenge APIs
+## 4. Login
 
-![Math Challenge](docs/screenshots/math_challenge.png)
+Authenticated user login.
 
-![Verify Math Challenge](docs/screenshots/math_verify.png)
+![Login](docs/screenshots/login_alarm_3.png)
 
-![QR Challenge](docs/screenshots/qr_challenge.png)
+---
 
-![Verify QR Challenge](docs/screenshots/qr_verify.png)
+## 5. Refresh Access Token
+
+Generate a new access token using refresh token rotation.
+
+![Refresh Token](docs/screenshots/access_token_from_refresh_alarm_4.png)
+
+---
+
+# ⏰ Alarm Management
+
+---
+
+## 6. Create Alarm
+
+Create a new alarm with challenge configuration.
+
+![Create Alarm](docs/screenshots/create_alarm_5.png)
+
+---
+
+## 7. Get All Alarms
+
+Retrieve all alarms belonging to the user.
+
+![Get Alarms](docs/screenshots/get_alarms_6.png)
+
+---
+
+## 8. Update Alarm
+
+Update alarm settings and challenge configuration.
+
+![Update Alarm](docs/screenshots/update_alarm_7.png)
+
+---
+
+## 9. Toggle Alarm
+
+Enable or disable an alarm.
+
+![Toggle Alarm](docs/screenshots/toggle_alarm_8.png)
+
+---
+
+# 🧠 Math Challenge System
+
+Users must solve a generated math problem before alarm dismissal.
+
+---
+
+## 10. Generate Math Challenge
+
+Generate a challenge for alarm dismissal.
+
+![Math Challenge](docs/screenshots/math_challenge_alarm_9.png)
+
+---
+
+## 11. Verify Math Challenge (Failure)
+
+Invalid answer submitted.
+
+![Math Failure](docs/screenshots/math_challenge_verify_alarm_success_false_10.png)
+
+---
+
+## 12. Verify Math Challenge (Success)
+
+Correct answer submitted.
+
+![Math Success](docs/screenshots/math_challenge_verify_alarm_success_true_11.png)
+
+---
+
+# 📱 QR Challenge System
+
+Users can dismiss alarms by scanning and verifying a QR challenge.
+
+---
+
+## 13. Generate QR Challenge
+
+Generate QR challenge token.
+
+![QR Challenge](docs/screenshots/get_qr_challenge_alarm_12.png)
+
+---
+
+## 14. Verify QR Challenge
+
+Verify QR challenge successfully.
+
+![QR Verify](docs/screenshots/verify_qr_challenge_alarm_13.png)
+
+---
+
+# 🚪 Logout
+
+Invalidate refresh token and terminate session.
+
+![Logout](docs/screenshots/logout_alarm_14.png)
 
 ---
 
